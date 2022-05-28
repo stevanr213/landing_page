@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    padding: 0 200px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    background-color: rgb(0, 11, 48);
+    color: white;
+    height: 90px;
+}
+
+.logo {
+    font-size: 2.5rem;
+    padding: 25px 0;
+}
+
+header ul {
+    justify-content: space-between;
+    gap: 50px;
+    font-size: 1.2rem;
+    list-style: none;
+    padding: 35px 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.info {
+    padding: 70px 0;
+    background-color: rgb(0, 11, 48);
+    color:#fff;
+    height: auto;
+}
+
+.info img {
+    width: 500px;
+    height: auto; 
+}
+ .about {
+     width: 50%;
+     /*padding-top: 30px;*/
+ }
+
+ .about p {
+     font-size: 16px;
+ }
+
+ .title {
+    font-size: 3.2rem;
+    margin-bottom: 50px;
+ }
+
+ .btn1 {
+     border: none;
+     border-radius: 6px;
+     width: 125px;
+     height: 40px;
+     background-color: #ddd;
+     font-size: 17px;
+     margin-top: 50px;
+ }
+
+ .btn1:hover {
+     background-color: rgb(132, 182, 247);
+     color: #111;
+     font-weight: bold;
+ }
+
+ .courses {
+     background-color: #eee;
+     color: #333;
+     padding: 80px 0px;
+ }
+
+ .title-2 {
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 60px;
+ }
+
+ .cards {
+     display: flex;
+     justify-content: space-between;
+     gap: 20px;
+ }
+
+.cards > div {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: 360px;
+    border-radius: 10px;
+    box-shadow: 7px 12px #bbb;
+    padding: 0px 20px;
+}
+
+ .cards > div img {
+     width: 330px;
+     height: auto;
+ }
+
+
+ .title-3 {
+     font-size: 22px;
+     padding: 15px 0px;
+ }
+
+ .btn2 {
+    border: none;
+    border-radius: 5px;
+    width: 95px;
+    height: 32px;
+    background-color: #666;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 25px;
+ }
+
+ .btn2:hover {
+    background-color: rgb(132, 182, 247);
+    color: #111;
+    font-weight: bold;
+}
+
+.quote {
+    background-color: #ddd;
+}
+
+.quote > .container {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 400px;
+}
+
+#quote {
+    color: #333;
+    font-size: 30px;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+#author {
+    align-self: flex-end;
+    color: #111;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.sign-up .container {
+    padding: 70px 0px;
+}
+
+.sign-up .box {
+    width: 60%;
+    margin: auto;
+    padding: 45px 45px;
+    background-color: rgb(132, 182, 247);
+    border-radius: 10px;
+    color: #222;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-up .box h3 {
+    padding: 0px;
+    padding-bottom: 15px;
+}
+
+.sign-up .box button {
+    margin-top: 10px;
+    height: 45px;
+}
+
+.sign-up .box button:hover {
+    background-color: #666;
+    color: #fff;
+    font-weight: bold;
+}
+
+footer {
+    background-color: rgb(0, 11, 48);
+    text-align: center;
+    color: #fff;
+    padding: 50px 0px;
+    font-size: 17px;
+}
+ 
+@media(max-width: 768px) {
+    .container {
+        padding: 0px 30px;
+    }
+
+    header {
+        height: auto;
+    }
+
+    header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    header ul {
+        padding: 15px 0;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+        padding: 15px 0;
+    }
+
+    .info {
+        padding: 50px 0;
+    }
+
+    .info .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about {
+        width: 90%;
+    }
+
+    .info h1 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+
+    .info p {
+        font-size: 16px;
+    }
+
+    .about button {
+        width: 120px;
+        height: 35px;
+        margin: 30px 0px;
+    }
+
+    .info img {
+        width: 320px;
+    }
+
+    .courses {
+        padding: 50px 0px;
+    }
+
+    .title-2 {
+        font-size: 35px;
+        text-align: center;
+        padding-bottom: 40px;
+     }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .cards > div {
+        height: 320px;
+    }
+    
+    .cards > div img {
+        width: 270px;
+    }
+
+    .title-3 {
+        font-size: 20px;
+    }
+
+    .quote > .container {
+        padding: 50px 30px;
+    }
+
+    #quote {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    #author {
+        font-size: 14px;
+    }
+
+    .sign-up .container {
+        padding: 20px 0px;
+    }
+
+    .sign-up .box {
+        width: 85%;
+        padding: 40px 40px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .sign-up .box button {
+        width: 120px;
+        height: 35px;
+        margin-top: 35px;
+    }
+}
